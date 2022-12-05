@@ -2,67 +2,224 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="animation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 </head>
 
 <body>
-    <div id="scroll-container">
-        <div id="scroll-text">This is scrolling text.<div>
-      </div>
-    </div>
-        <div id="frame1__wrapper">
-            <nav id="nav__wrapper">
-                <ul>
-                    <li class="nav__btn btn btn--activated">START</li>
-                    <li class="nav__btn btn btn--activated">PROJECT</li>
-                    <li class="nav__btn btn btn--activated">ABOUT</li>
-                </ul>
-            </nav>
-            <header id="header__wrapper">
-                <h1 class="header_title title-text">HELLO;</h1>
-                <div id="new__btn">
-                    <img src="photo/frame1.png" />
-                <svg viewBox="0 0 211.9 104.6">
-                  <path id="curve-1" d="M41.3,71.4V30.9c0-7.4,6-13.5,13.5-13.5h101.7c7.4,0,13.5,6,13.5,13.5v43c0,7.4-6,13.5-13.5,13.5H54.8
-                    c-7.4,0-13.5-6-13.5-13.5"/>
-                  <path id="curve-2" d="M176.6,33.8v42c0,9.5-7.7,17.2-17.2,17.2H51.8c-9.5,0-17.2-7.7-17.2-17.2V29c0-9.5,7.7-17.2,16.2-17.2h107.6
-                    c10.5,0,18.2,7.7,18.2,17.2v3.5"/>
-                   <text>
-                    <textPath id="text-1" xlink:href="#curve-1" startOffset="0%">
-                      Here's to the crazy ones
-                    </textPath>
-                    <textPath id="text-2" xlink:href="#curve-2" startOffset="75%">
-                      Here's to the crazy ones
-                    </textPath>
-                  </text>
-                </svg>
-                </div>
-                
-            </header>
-        </div>
-        <div id="scroll-container">
-            <div id="scroll-text">This is scrolling text.<div>
-          </div>
-        </div>
-        <main id="main">
-            <div class="frame2__wrapper">
-                <section class="frame2__box">
-                    <h1 class="box__title title--text">Project Name</h1>
-                    <h3 class="box_title title-text2">small description</h3>
-                    <div class="box_img">1</div>
-                </section>
+  <div id="scroll-container">
+    <div id="scroll-text">“When UX doesn’t consider ALL users, shouldn’t it be known as “SOME User Experience” or… SUX?”
+      - Billy Gregory</div>
+  </div>
+  <div id="frame1__wrapper">
+    <nav id="nav__wrapper">
+      <ul>
+        <a href="#main">
+        <li class="nav__btn btn--activated">Start</li>
+        </a>
+        <a href="#main">
+          <li class="nav__btn btn--activated">About</li>
+          </a>
+          <a href="#main">
+            <li class="nav__btn btn--activated">Contact</li>
+            </a>
+      </ul>
+    </nav>
+    <header id="header__wrapper">
+      <div id="center__wrapper">
+        <a href="#main">
+          <div class="center__text title-text2">START</div>
+          <div id="center">
+            <div id="sun">
+              <div id="earth">
+                <div id="moon"></div>
+              </div>
             </div>
-        </main>
-        <footer id="footer"> 1
-            <div class="frame3__upper"></div>
-            <div class="frame3__below"></div>
-        </footer>
-        <script src="main.js"></script>
+          </div>
+        </a>
+      </div>
+      <div id="heading">
+        <h1 class="header_title title-text" id="frame1_heading"></h1>
+        <p class="title-text2">IMMA TRUONG KHOA. UX UI, GRAPHIC.</p>
+      </div>
+    </header>
+  </div>
+  <main id="main">
+    <div class="frame2__wrapper">
+      <section id="filter">
+        <div id="filter_button">
+          <a class="btn btn-primary active" data-filter="all">All</a>
+          <!-- <a class="btn btn-primary" data-filter="price">Price</a> -->
+          <a class="btn btn-primary" data-filter="web">Web</a>
+          <a class="btn btn-primary" data-filter="logo">Logo</a>
+          <a class="btn btn-primary" data-filter="banner">Banner</a>
+          <a class="btn btn-primary" data-filter="3d-video">3D-Video</a>
+          <a class="btn btn-primary" data-filter="sketch">Sketch</a>
+        </div>
+        <form action="" id="input_filter">
+          <span>
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </span>
+          <input type="text" placeholder="filter item ..." id="search-item" autocomplete="off">
+        </form>
+
+        <div id="filter-data">
+          <!-- web -->
+          <article class="element_projects" data-item="web">
+            <img src="images/cupcake-1.jpeg" alt="">
+            <div class="infor">
+              <h1 class="name_item">Restautant</h1>
+              <h1 class="type">Web</h1>
+              <div id="logo__wrapper">
+                <div class="logo__item item-html"></div>
+                <div class="logo__item item-css"></div>
+                <div class="logo__item item-js"></div>
+              </div>
+            </div>
+          </article>
+          <!-- Logo -->
+          <article class="element_projects" data-item="logo">
+            <img src="images/cupcake-1.jpeg" alt="">
+            <div class="infor">
+              <h1 class="name_item">MiuTi</h1>
+              <h1 class="type">Logo</h1>
+              <div id="logo__wrapper">
+                <div class="logo__item item-html"></div>
+                <div class="logo__item item-css"></div>
+                <div class="logo__item item-js"></div>
+              </div>
+            </div>
+          </article>
+          <!-- Banner -->
+          <article class="element_projects" data-item="banner">
+            <img src="images/cupcake-1.jpeg" alt="">
+            <div class="infor">
+              <h1 class="name_item">MiuTi</h1>
+              <h1 class="type">banner</h1>
+              <div id="logo__wrapper">
+                <div class="logo__item item-html"></div>
+                <div class="logo__item item-css"></div>
+                <div class="logo__item item-js"></div>
+              </div>
+            </div>
+          </article>
+          <!-- 3D-video -->
+          <article class="element_projects" data-item="3d-video">
+            <img src="images/cupcake-1.jpeg" alt="">
+            <div class="infor">
+              <h1 class="name_item">3dvideo</h1>
+              <h1 class="type">3dvid</h1>
+              <div id="logo__wrapper">
+                <div class="logo__item item-html"></div>
+                <div class="logo__item item-css"></div>
+                <div class="logo__item item-js"></div>
+              </div>
+            </div>
+          </article>
+          <!-- sketch -->
+          <article class="element_projects" data-item="sketch">
+            <img src="images/cupcake-1.jpeg" alt="">
+            <div class="infor">
+              <h1 class="name_item">Sketch</h1>
+              <h1 class="type">Sketch</h1>
+              <div id="logo__wrapper">
+                <div class="logo__item item-html"></div>
+                <div class="logo__item item-css"></div>
+                <div class="logo__item item-js"></div>
+              </div>
+            </div>
+          </article>
+          <article class="element_projects" data-item="sketch">
+            <img src="images/cupcake-1.jpeg" alt="">
+            <div class="infor">
+              <h1 class="name_item">Sketch</h1>
+              <h1 class="type">Sketch</h1>
+              <div id="logo__wrapper">
+                <div class="logo__item item-html"></div>
+                <div class="logo__item item-css"></div>
+                <div class="logo__item item-js"></div>
+              </div>
+            </div>
+          </article>
+          <article class="element_projects" data-item="sketch">
+            <img src="images/cupcake-1.jpeg" alt="">
+            <div class="infor">
+              <h1 class="name_item">Sketch</h1>
+              <h1 class="type">Sketch</h1>
+              <div id="logo__wrapper">
+                <div class="logo__item item-html"></div>
+                <div class="logo__item item-css"></div>
+                <div class="logo__item item-js"></div>
+              </div>
+            </div>
+          </article>
+          <article class="element_projects" data-item="sketch">
+            <img src="images/cupcake-1.jpeg" alt="">
+            <div class="infor">
+              <h1 class="name_item">Sketch</h1>
+              <h1 class="type">Sketch</h1>
+              <div id="logo__wrapper">
+                <div class="logo__item item-html"></div>
+                <div class="logo__item item-css"></div>
+                <div class="logo__item item-js"></div>
+              </div>
+            </div>
+          </article>
+
+          <h1 id="showtext"></h1>
+        </div>
+      </section>
+      <section id="modal">
+        <div class="modal_box show">
+          <div class="fa fa-window-close"></div>
+          <div class="lightbox"></div>
+          <div class="fa fa-caret-left"></div>
+          <div class="fa fa-caret-right"></div>
+        </div>
+      </section>
+      </section>
+    </div>
+  </main>
+  <footer id="footer">
+    <div class="frame3__upper">
+      <h1 class="header_title title-text">CONTACT</h1>
+      <P class="title-text2">mail:mail@lenasteinkuehler.com
+        Mobile Phone: +49 176 223 79 706</P>
+      <section id="footer__logo">
+        <div class="logo__item item-js"></div>
+        <div class="logo__item item-js"></div>
+        <div class="logo__item item-js"></div>
+      </section>
+      <h1 class="header_title title-text">TRUONG KHOA</h1>
+      <P class="title-text2 upper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, nobis ipsam
+        blanditiis
+        iure voluptatem mollitia aperiam deserunt ipsum, nulla eos dolor quas nihil in ratione dolorum accusamus. Nemo,
+        voluptate quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum incidunt sunt maiores beatae
+        explicabo ipsam quasi labore, similique voluptas perferendis harum doloremque consectetur quia praesentium
+        dolorem ipsum molestias? Voluptate, quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quasi
+        sequi? Rem doloremque, tempora dicta similique beatae laborum eius architecto, illum placeat voluptas possimus
+        excepturi eveniet, eos repudiandae obcaecati repellendus.</P>
+    </div>
+    <div class="frame3__below">
+      <h1 class="header_title title-text">
+        Let's get in contact.</h1>
+      <form id="contact__form">
+        <input type="text" id="fname" class="input__contact" name="fname" placeholder="Name*" required><br>
+        <input type="email" id="mail" class="input__contact" name="fname" placeholder="E-Mail*" required><br>
+        <input type="text" id="subject" class="input__contact" name="fname" placeholder="Subject"><br>
+        <input type="text" id="message" class="input__contact" name="fname" placeholder="Message"><br>
+        <button class="button__contact btn" type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
