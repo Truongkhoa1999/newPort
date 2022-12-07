@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style1.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="animation.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 </head>
 
@@ -19,6 +20,11 @@
       - Billy Gregory</div>
   </div>
   <div id="frame1__wrapper">
+    <!-- <div class="parallax_group">
+      <div class="layer_star"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div> -->
     <nav id="nav__wrapper">
       <ul>
         <a href="#main">
@@ -27,7 +33,7 @@
         <a href="#main">
           <li class="nav__btn btn--activated">About</li>
         </a>
-        <a href="#main">
+        <a href="#footer">
           <li class="nav__btn btn--activated">Contact</li>
         </a>
       </ul>
@@ -47,11 +53,11 @@
       </div>
       <div id="heading">
         <h1 class="header_title title-text" id="frame1_heading"></h1>
-        <p class="title-text2">IMMA TRUONG KHOA. UX UI, GRAPHIC.</p>
+        <p class="header_des title-text2">I'M TRUONG KHOA, UX UI GRAPHIC DESIGNER</p>
       </div>
     </header>
   </div>
-  <main id="main">
+  <main id="main" style="background-color: black ;">
     <div class="frame2__wrapper">
       <section id="filter">
         <div id="filter_button">
@@ -69,7 +75,6 @@
           </span>
           <input type="text" placeholder="filter item ..." id="search-item" autocomplete="off">
         </form>
-
         <div id="filter-data">
           <!-- web -->
           <article class="element_projects" data-item="web">
@@ -86,96 +91,80 @@
               </div>
             </div>
           </article>
-
-
           <!-- Logo -->
-          <!-- <article class="element_projects" data-item="logo">
-            <img src="images/cupcake-1.jpeg" alt="">
-            <div class="infor">
-              <h1 class="name_item">MiuTi</h1>
-              <h1 class="type">Logo</h1>
-              <div id="logo__wrapper">
-                <div class="logo__item item-html"></div>
-                <div class="logo__item item-css"></div>
-                <div class="logo__item item-js"></div>
+          <article class="element_projects" data-item="logo">
+            <div class="post__item">
+              <img src="images/cupcake-1.jpeg" alt="">
+              <div class="infor">
+                <h1 class="name_item">MiuTi</h1>
+                <h1 class="type">Logo</h1>
+                <div id="logo__wrapper">
+                  <div class="logo__item item-html"></div>
+                  <div class="logo__item item-css"></div>
+                  <div class="logo__item item-js"></div>
+                </div>
               </div>
             </div>
-          </article> -->
+          </article>
           <!-- Banner -->
-          <!-- <article class="element_projects" data-item="banner">
-            <img src="images/cupcake-1.jpeg" alt="">
-            <div class="infor">
-              <h1 class="name_item">MiuTi</h1>
-              <h1 class="type">banner</h1>
-              <div id="logo__wrapper">
-                <div class="logo__item item-html"></div>
-                <div class="logo__item item-css"></div>
-                <div class="logo__item item-js"></div>
+          <article class="element_projects" data-item="banner">
+            <div class="post__item">
+              <img src="images/cupcake-1.jpeg" alt="">
+              <div class="infor">
+                <h1 class="name_item">Restautant</h1>
+                <h1 class="type">Web</h1>
+                <div id="logo__wrapper">
+                  <div class="logo__item item-html"></div>
+                  <div class="logo__item item-css"></div>
+                  <div class="logo__item item-js"></div>
+                </div>
               </div>
             </div>
-          </article> -->
-          <!-- 3D-video -->
-          <!-- <article class="element_projects" data-item="3d-video">
-            <img src="images/cupcake-1.jpeg" alt="">
-            <div class="infor">
-              <h1 class="name_item">3dvideo</h1>
-              <h1 class="type">3dvid</h1>
-              <div id="logo__wrapper">
-                <div class="logo__item item-html"></div>
-                <div class="logo__item item-css"></div>
-                <div class="logo__item item-js"></div>
-              </div>
-            </div>
-          </article> -->
+          </article>
           <!-- sketch -->
-          <!-- <article class="element_projects" data-item="sketch">
-            <img src="images/cupcake-1.jpeg" alt="">
-            <div class="infor">
-              <h1 class="name_item">Sketch</h1>
-              <h1 class="type">Sketch</h1>
-              <div id="logo__wrapper">
-                <div class="logo__item item-html"></div>
-                <div class="logo__item item-css"></div>
-                <div class="logo__item item-js"></div>
+          <article class="element_projects" data-item="sketch">
+            <div class="post__item">
+              <img src="images/cupcake-1.jpeg" alt="">
+              <div class="infor">
+                <h1 class="name_item">Restautant</h1>
+                <h1 class="type">Web</h1>
+                <div id="logo__wrapper">
+                  <div class="logo__item item-html"></div>
+                  <div class="logo__item item-css"></div>
+                  <div class="logo__item item-js"></div>
+                </div>
               </div>
             </div>
           </article>
           <article class="element_projects" data-item="sketch">
-            <img src="images/cupcake-1.jpeg" alt="">
-            <div class="infor">
-              <h1 class="name_item">Sketch</h1>
-              <h1 class="type">Sketch</h1>
-              <div id="logo__wrapper">
-                <div class="logo__item item-html"></div>
-                <div class="logo__item item-css"></div>
-                <div class="logo__item item-js"></div>
+            <div class="post__item">
+              <img src="images/cupcake-1.jpeg" alt="">
+              <div class="infor">
+                <h1 class="name_item">Restautant</h1>
+                <h1 class="type">Web</h1>
+                <div id="logo__wrapper">
+                  <div class="logo__item item-html"></div>
+                  <div class="logo__item item-css"></div>
+                  <div class="logo__item item-js"></div>
+                </div>
               </div>
             </div>
           </article>
           <article class="element_projects" data-item="sketch">
-            <img src="images/cupcake-1.jpeg" alt="">
-            <div class="infor">
-              <h1 class="name_item">Sketch</h1>
-              <h1 class="type">Sketch</h1>
-              <div id="logo__wrapper">
-                <div class="logo__item item-html"></div>
-                <div class="logo__item item-css"></div>
-                <div class="logo__item item-js"></div>
+            <div class="post__item">
+              <img src="images/cupcake-1.jpeg" alt="">
+              <div class="infor">
+                <h1 class="name_item">Restautant</h1>
+                <h1 class="type">Web</h1>
+                <div id="logo__wrapper">
+                  <div class="logo__item item-html"></div>
+                  <div class="logo__item item-css"></div>
+                  <div class="logo__item item-js"></div>
+                </div>
               </div>
             </div>
           </article>
-          <article class="element_projects" data-item="sketch">
-            <img src="images/cupcake-1.jpeg" alt="">
-            <div class="infor">
-              <h1 class="name_item">Sketch</h1>
-              <h1 class="type">Sketch</h1>
-              <div id="logo__wrapper">
-                <div class="logo__item item-html"></div>
-                <div class="logo__item item-css"></div>
-                <div class="logo__item item-js"></div>
-              </div>
-            </div>
-          </article> -->
+          <!-- article ends -->
 
           <h1 id="showtext"></h1>
         </div>
@@ -191,6 +180,11 @@
       </section>
     </div>
   </main>
+  <!-- frame3 -->
+  <div id="frame_about">
+<section class="about_L">s</section>
+<section class="about_R">s</section>
+  </div>
   <footer id="footer">
     <div class="frame3__upper">
       <h1 class="header_title title-text">CONTACT</h1>
