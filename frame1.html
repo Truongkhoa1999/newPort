@@ -7,11 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="star.css">
   <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="animation.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <link rel="stylesheet" href="test.css">
+  <!-- mouse -->
+  <!-- <link rel="stylesheet" href="cursor.css"> -->
 </head>
 
 <body>
@@ -20,21 +24,65 @@
       - Billy Gregory</div>
   </div>
   <div id="frame1__wrapper">
-    <!-- <div class="parallax_group">
-      <div class="layer_star"></div>
-      <div class="layer"></div>
-      <div class="layer"></div>
-    </div> -->
+    <div id="myVideo">
+      <div>
+        <div class="shootingStarContainer">
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+        </div>
+        <div class="shootingStarContainer">
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+        </div>
+        <div class="shootingStarContainer">
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+          <div class="shootingStar"></div>
+        </div>
+        <div class="stars"></div>
+        <div class="twinkleMask"></div>
+        <div class="overflow">
+          <div class="twinkleMask2"></div>
+          <div class="clouds"></div>
+        </div>
+        <div class="fogContainer">
+          <div class="fog"></div>
+        </div>
+      </div>
+    </div>
     <nav id="nav__wrapper">
       <ul>
-        <a href="#main">
-          <li class="nav__btn btn--activated">Start</li>
+        <a class="nav_link" href="#header__wrapper" onclick="addClass()">
+          <li class="nav__btn">Start</li>
         </a>
-        <a href="#main">
-          <li class="nav__btn btn--activated">About</li>
+        <a class="nav_link" href="#main" onclick="addClass()">
+          <li class="nav__btn">Projects</li>
         </a>
-        <a href="#footer">
-          <li class="nav__btn btn--activated">Contact</li>
+        <a class="nav_link" href="#footer" onclick="addClass()">
+          <li class="nav__btn">Contact</li>
         </a>
       </ul>
     </nav>
@@ -165,7 +213,6 @@
             </div>
           </article>
           <!-- article ends -->
-
           <h1 id="showtext"></h1>
         </div>
       </section>
@@ -177,53 +224,38 @@
           <div class="fa fa-caret-right"></div>
         </div>
       </section>
-      </section>
-    </div>
-  </main>
-  <!-- frame3 -->
-  <div id="frame_about">
-    <div class="about_column c1">
-      <img class="c1 _image" src="photo/c1.jpg" alt="my profile picture">
-    </div>
-    <div class="about_column c2">
-      <h1 class="title-text">The Short</h1>
-      <p class="title-text2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa iure perspiciatis facilis
-        blanditiis nobis,
-        perferendis obcaecati odio, consequatur commodi dolore sint recusandae consequuntur aliquam amet! Quas excepturi
-        quo ex nostrum!</p>
-      <img class="c2_image" src="photo/c1.jpg" alt="pic2">
-    </div>
-    <div class="about_column c3">
-      <h1 class="title-text">The Long </h1>
-      <p class="title-text2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa iure perspiciatis facilis
-        blanditiis nobis,
-        perferendis obcaecati odio, consequatur commodi dolore sint recusandae consequuntur aliquam amet! Quas excepturi
-        quo ex nostrum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eveniet ipsa consectetur fugit saepe
-        similique, corporis sint natus voluptatem ex impedit laudantium! Nobis eum sapiente sint fugit amet, quibusdam
-        doloribus! <br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis quas, minima quia dignissimos harum
-        similique doloribus iste voluptates, beatae repellat voluptatibus impedit eveniet culpa sed praesentium
-        necessitatibus vero repudiandae. Dolorem?
-        <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, velit nisi consectetur ab neque
-        officia consequuntur suscipit odit ipsam, iure distinctio repudiandae placeat maiores iusto! Veritatis ducimus
-        odit adipisci fuga?
-      </p>
-      <p class="title-text2">
-        <br>
-        My Instagram includes more graphic design. Feel free to follow if you are looking for new idea.
-      </p>
-    </div>
-    <div class="about_column c4">
-      <h1 class="title-text">Qalified </h1>
-      <ul>
-        <li class="link1">1</li>
-        <li class="link1">2</li>
-        <li class="link1">3</li>
-      </ul>
 
     </div>
+    </section>
+  </main>
+  <!-- frame3 -->
+  <section id="about">
+    <div id="frame_about">
+      <div class="about_column">
+        <div class="about_logo c1"></div>
+        <div class="about_content">
+          <h1 class="about_heading">Haaga-Helia</h1>
+          <p>Graduated by</p>
+        </div>
+      </div>
+      <div class="about_column">
+        <div class="about_logo c2"></div>
+        <div class="about_content">
+          <h1 class="about_heading">Haaga-Helia</h1>
+          <p>Graduated by</p>
+        </div>
+      </div>
+      <div class="about_column">
+        <div class="about_logo c3"></div>
+        <div class="about_content">
+          <h1 class="about_heading">Haaga-Helia</h1>
+          <p>Graduated by</p>
+        </div>
+      </div>
+      
+  </section>
   </div>
+
   <footer id="footer">
     <div class="frame3__upper">
       <h1 class="header_title title-text">CONTACT</h1>
@@ -254,9 +286,13 @@
         <input type="text" id="message" class="input__contact" name="fname" placeholder="Message"><br>
         <button class="button__contact btn" type="submit">SUBMIT</button>
       </form>
-    </div>
+
   </footer>
+  <!-- test sky -->
+  <div class="cursor"></div>
+  </div>
   <script src="main.js"></script>
+
 </body>
 
 </html>
