@@ -339,10 +339,9 @@
   overflow: hidden;
   position: relative;
   z-index: 7;
-  /* border: 4px solid yellow; */
 }
 
-.fog {
+/* .fog {
   position: absolute;
   left: -50%;
   top: -30%;
@@ -359,7 +358,7 @@
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   background: linear-gradient(-5deg, #00000000 0%, #ffffff15 40%, #74590121 45%, #8b845b21 55%, #00000000 70%);
-}
+} */
 
 @-webkit-keyframes fogFrames {
   0% {

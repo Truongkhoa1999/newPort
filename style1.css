@@ -57,12 +57,11 @@ body {
 }
 
 .title-text {
-  font-size: 50px;
   color: var(--ye);
 }
 
 .title-text2 {
-  font-size: 15px;
+  /* font-size: 15px; */
   color: var(--blu);
 
 }
@@ -176,8 +175,11 @@ ul li {
   -webkit-background-clip: text;
   animation: shine 3s infinite;
   text-shadow: 0 0px 0px rgba(203, 221, 12, 0.5);
+  font-size: 30px;
 }
-
+.header_title{
+  font-size: 60px;
+}
 @-webkit-keyframes shine {
 
   0%,
@@ -197,19 +199,16 @@ ul li {
   grid-area: header;
   justify-content: space-evenly;
   transition: 0.1s;
-border: 2px solid green;
+
 box-sizing: border-box;
 
 }
 
 #heading {
-/* margin-top: 5%; */
 margin-left: auto;
 margin-right: auto;
-
-  /* margin-top: 12rem; */
   text-align: center;
-  border: 2px solid  red;
+ 
 }
 
 /* setting sun moon and earth */
@@ -232,7 +231,7 @@ margin-right: auto;
   color: black !important;
   display: flex;
   position: absolute;
-  border: 4px solid green;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -241,6 +240,7 @@ margin-right: auto;
   border-radius: 50%;
   transition: 0.75s;
   /* background-color: black; */
+  flex-shrink: 5;
 }
 
 #center:hover {
