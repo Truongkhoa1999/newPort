@@ -2,10 +2,12 @@
 #scroll-container {
   padding: 1rem 0 1rem 0;
   overflow: hidden;
-  border: 2px solid;
+  /* border: 2px solid; */
+  background-color: black;
+  font-size: 14px;
+
 }
 #scroll-text {
-  border: 2px solidred;
   /* animation properties */
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
@@ -13,6 +15,7 @@
   -moz-animation: my-animation 9s linear infinite;
   -webkit-animation: my-animation 9s linear infinite;
   animation: my-animation 18s linear infinite;
+  color: white;
 }
 
 /* for Firefox */

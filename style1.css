@@ -1,8 +1,8 @@
 /** universe settings**/
 :root {
-  --dark: rgb(28, 28, 30);
-  --light: rgb(52, 199, 89);
-  --neutral: white;
+  --ye: #fefe30;
+  --blu: #0045fe;
+  --re: #fe220a;
   --html: url(images/html.png);
   --css: url(images/css.png);
   --js: url(images/js.png);
@@ -41,7 +41,7 @@ html {
 
 body {
   /** font from GOOGLE FONTS **/
-  font-family: 'Baloo Chettan 2', cursive;
+  font-family: 'Spline Sans Mono', monospace;
   line-height: 1.5;
   /* display: flex;
     flex-direction: column;
@@ -58,13 +58,12 @@ body {
 
 .title-text {
   font-size: 50px;
-  color: var(--neutral);
+  color: var(--ye);
 }
 
 .title-text2 {
   font-size: 15px;
-
-  color: var(--neutral);
+  color: var(--blu);
 
 }
 
@@ -112,7 +111,7 @@ a {
   min-height: 100%;
   z-index: -1;
   grid-area: video;
-
+  /* filter: contrast(120%); */
 }
 #frame1__wrapper {
   width: 100%;
@@ -176,7 +175,7 @@ ul li {
   color: rgba(255, 255, 255, 0.3);
   -webkit-background-clip: text;
   animation: shine 3s infinite;
-  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0px 0px rgba(203, 221, 12, 0.5);
 }
 
 @-webkit-keyframes shine {
@@ -503,7 +502,7 @@ article {
   display: flex;
   flex-wrap: wrap;
   color: white;
-  font-family: 'Baloo Chettan 2', cursive;
+  font-family: 'Spline Sans Mono', monospace;
 
 }
 
@@ -556,6 +555,26 @@ article {
   background-image: var(--js);
   background-size: contain;
   background-position: center;
+}
+.item-git {
+ border-radius: 50%;
+ background-color: white;
+ box-sizing: border-box;
+ padding: 8px;
+ font-size: 14px;
+ font-weight: bold;
+}
+.item-in {
+
+  border-radius: 50%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+ }
+.item-git + .item-in {
+  margin-left: 1rem;
 }
 
 .active {
@@ -630,25 +649,25 @@ article {
   grid-area: about;
   width: 100%;
   height: auto;
-  background-color: white;
+  background-color: #020250;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding: 6rem;
-  
+
+
 }
 
  .about_column {
-  border: 2px solid black;
+  /* border: 2px solid white; */
   width: 15rem;
   height:15rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 1rem;
+  border: 2px solid white;
 }
  
 .about_logo{
@@ -663,7 +682,10 @@ article {
 .about_heading{
   font-size: 15px;
   font-weight: bold;
-  color: black;
+  color: whitesmoke;
+}
+.about_title{
+  color: whitesmoke;
 }
 .c1{
   content: var(--haaga);
@@ -686,7 +708,7 @@ article {
   align-items: center;
   justify-content: flex-end;
   grid-area: footer;
-  background-color: blue;
+  background-color: rgb(2, 2, 31);
   background-size: cover;
   max-height: 80rem;
 }
@@ -708,13 +730,28 @@ article {
 
 .upper__text {
   text-align: left !important;
-color: black;
+color: white;
 font-weight: bold;
+line-height: 2;
 }
-
+.header_title2{
+  color: white;
+  text-align: left;
+  font-size: 29px;
+}
+.header_title1{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+.header_des1{
+  color: white;
+  line-height: 2;
+}
 .frame3__below {
   /* border: solid 2px green; */
-  width: 70%;
+  max-width: 40rem;
+  min-height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -740,6 +777,26 @@ font-weight: bold;
   margin-top: 0;
 }
 
+.footer_background{
+  text-align: center;
+  max-width: 90%;
+  max-height: 90%;
+  /* min-height: 50rem; */
+  /* border: 2px solid red; */
+  z-index: 1;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: var(--footer);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
 #scroll-container {
   grid-area: scroll;
   background-color: white;
@@ -760,21 +817,5 @@ font-weight: bold;
   color: var(--light);
 
 }
-.footer_background{
-  text-align: center;
-  width: 50%;
-  /* min-height: 50rem; */
-  /* border: 2px solid red; */
-  z-index: 1;
-  position: relative;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-image: var(--footer);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 /* test sky */
