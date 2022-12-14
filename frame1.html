@@ -10,15 +10,16 @@
   <link rel="stylesheet" href="star.css">
   <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" href="animation.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome-ie7.min.css"></script>
   <link rel="stylesheet" href="test.css">
   <!-- mouse -->
   <!-- <link rel="stylesheet" href="cursor.css"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
@@ -78,13 +79,13 @@
     </div>
     <nav id="nav__wrapper">
       <ul>
-        <a class="nav_link" href="#header__wrapper" onclick="addClass()">
+        <a class="nav_link" href="#header__wrapper">
           <li class="nav__btn">Start</li>
         </a>
-        <a class="nav_link" href="#main" onclick="addClass()">
+        <a class="nav_link" href="#main">
           <li class="nav__btn">Projects</li>
         </a>
-        <a class="nav_link" href="#footer" onclick="addClass()">
+        <a class="nav_link" href="#footer">
           <li class="nav__btn">Contact</li>
         </a>
       </ul>
@@ -117,7 +118,7 @@
           <a class="btn btn-primary" data-filter="web">Web</a>
           <a class="btn btn-primary" data-filter="logo">Logo</a>
           <a class="btn btn-primary" data-filter="banner">Banner</a>
-          <a class="btn btn-primary" data-filter="3d-video">3D-Video</a>
+          <a class="btn btn-primary" data-filter="video">Video</a>
           <a class="btn btn-primary" data-filter="sketch">Sketch</a>
         </div>
         <form action="" id="input_filter">
@@ -130,91 +131,92 @@
           <!-- web -->
           <article class="element_projects" data-item="web">
             <div class="post__item">
-              <img src="images/cupcake-1.jpeg" alt="">
-              <div class="infor">
-                <h1 class="name_item">Restautant</h1>
-                <h1 class="type">Web</h1>
-                <div id="logo__wrapper">
-                  <div class="logo__item item-html"></div>
-                  <div class="logo__item item-css"></div>
-                  <div class="logo__item item-js"></div>
+                <div class="infor">
+                <img class="post__image" src="photo/finedin.png" alt="">
+                  <h1 class="name_item">Fine Dinning</h1>
+                  <h1 class="type">Web</h1>
+                  <div id="logo__wrapper">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
                 </div>
-              </div>
             </div>
           </article>
           <!-- Logo -->
           <article class="element_projects" data-item="logo">
             <div class="post__item">
-              <img src="images/cupcake-1.jpeg" alt="">
-              <div class="infor">
-                <h1 class="name_item">MiuTi</h1>
-                <h1 class="type">Logo</h1>
-                <div id="logo__wrapper">
-                  <div class="logo__item item-html"></div>
-                  <div class="logo__item item-css"></div>
-                  <div class="logo__item item-js"></div>
+                <div class="infor">
+                <img class="post__image" src="photo/finedin.png" alt="">
+                  <h1 class="name_item">Fine Dinning</h1>
+                  <h1 class="type">Logo</h1>
+                  <div id="logo__wrapper">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
                 </div>
-              </div>
             </div>
           </article>
           <!-- Banner -->
           <article class="element_projects" data-item="banner">
             <div class="post__item">
-              <img src="images/cupcake-1.jpeg" alt="">
-              <div class="infor">
-                <h1 class="name_item">Restautant</h1>
-                <h1 class="type">Web</h1>
-                <div id="logo__wrapper">
-                  <div class="logo__item item-html"></div>
-                  <div class="logo__item item-css"></div>
-                  <div class="logo__item item-js"></div>
+                <div class="infor">
+                <img class="post__image" src="photo/finedin.png" alt="">
+                  <h1 class="name_item">Fine Dinning</h1>
+                  <h1 class="type">Banner</h1>
+                  <div id="logo__wrapper">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
                 </div>
-              </div>
             </div>
           </article>
           <!-- sketch -->
           <article class="element_projects" data-item="sketch">
             <div class="post__item">
-              <img src="images/cupcake-1.jpeg" alt="">
-              <div class="infor">
-                <h1 class="name_item">Restautant</h1>
-                <h1 class="type">Web</h1>
-                <div id="logo__wrapper">
-                  <div class="logo__item item-html"></div>
-                  <div class="logo__item item-css"></div>
-                  <div class="logo__item item-js"></div>
+                <div class="infor">
+                <img class="post__image" src="photo/finedin.png" alt="">
+                  <h1 class="name_item">Fine Dinning</h1>
+                  <h1 class="type">Sketch</h1>
+                  <div id="logo__wrapper">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
                 </div>
-              </div>
             </div>
-          </article>
-          <article class="element_projects" data-item="sketch">
-            <div class="post__item">
-              <img src="images/cupcake-1.jpeg" alt="">
-              <div class="infor">
-                <h1 class="name_item">Restautant</h1>
-                <h1 class="type">Web</h1>
-                <div id="logo__wrapper">
-                  <div class="logo__item item-html"></div>
-                  <div class="logo__item item-css"></div>
-                  <div class="logo__item item-js"></div>
-                </div>
+           </article>
+            <!-- 3d videos -->
+            <article class="element_projects" data-item="video">
+              <div class="post__item">
+                  <div class="infor">
+                  <img class="post__image" src="photo/finedin.png" alt="">
+                    <h1 class="name_item">Fine Dinning</h1>
+                    <h1 class="type">Video</h1>
+                    <div id="logo__wrapper">
+                      <i class="fa-brands fa-html5"></i>
+                      <i class="fa-brands fa-html5"></i>
+                      <i class="fa-brands fa-html5"></i>
+                    </div>
+                  </div>
               </div>
-            </div>
-          </article>
-          <article class="element_projects" data-item="sketch">
-            <div class="post__item">
-              <img src="images/cupcake-1.jpeg" alt="">
-              <div class="infor">
-                <h1 class="name_item">Restautant</h1>
-                <h1 class="type">Web</h1>
-                <div id="logo__wrapper">
-                  <div class="logo__item item-html"></div>
-                  <div class="logo__item item-css"></div>
-                  <div class="logo__item item-js"></div>
-                </div>
+            </article>
+            <article class="element_projects" data-item="video">
+              <div class="post__item">
+                  <div class="infor">
+                  <img class="post__image" src="photo/finedin.png" alt="">
+                    <h1 class="name_item">Fine Dinning</h1>
+                    <h1 class="type">Video</h1>
+                    <div id="logo__wrapper">
+                      <i class="fa-brands fa-html5"></i>
+                      <i class="fa-brands fa-html5"></i>
+                      <i class="fa-brands fa-html5"></i>
+                    </div>
+                  </div>
               </div>
-            </div>
-          </article>
+            </article>
           <!-- article ends -->
           <h1 id="showtext"></h1>
         </div>
@@ -237,12 +239,8 @@
       <div class="about_column">
         <div class="about_logo c1"></div>
         <div class="about_content">
-          <h1 class="about_heading">Graduation
-
-
-  
-          </h1>
-          <p class="about_heading">Bachelor of Business Information Technology</p>
+          <h1 class="about_heading">Graduation</h1>
+          <p class="about_title">Bachelor of Business Information Technology</p>
         </div>
       </div>
       <div class="about_column">

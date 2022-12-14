@@ -146,7 +146,7 @@ const myInterval = setInterval(displayWord, 2000)
 function displayWord() {
     let x = document.getElementById('frame1_heading')
     if (x.innerText == "Hello;") {
-        x.innerText = "Ola;"
+        x.innerText = "Ola;"    
     } else if (x.innerText == "Ola;") {
         x.innerText = "Xin Chào;"
     } else if (x.innerText == "Xin Chào;") {
