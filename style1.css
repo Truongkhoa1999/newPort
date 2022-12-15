@@ -81,53 +81,28 @@ body {
 .btn--activated {
   color: yellow !important;
 } */
-
-btn{
-  position: relative;
-  display: inline-flex;
-  width: 180px;
-  height: 55px;
-  margin: 0 15px;
-  perspective: 1000px;
-}
-.btn a{
-  font-size: 19px;
-  letter-spacing: 1px;
-  transform-style: preserve-3d;
-  transform: translateZ(-25px);
-  transition: transform .25s;
-  font-family: 'Montserrat', sans-serif;
-  
-}
-.btn a:before,
-.btn a:after{
-  position: absolute;
-  content: "BUTTON";
-  height: 55px;
-  width: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid black;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-.btn a:before{
+.btn{
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
   color: #fff;
-  background: #000;
-  transform: rotateY(0deg) translateZ(25px);
+  background: #000a47;
+  line-height: 1.15;
+  font-size: 16px;}
+  .btn:hover {
+      transition: all .1s ease;
+      box-shadow: 0 0 0 0 #fff, 0 0 0 3px var(--secondNeutral);
 }
-.btn a:after{
-  color: #000;
-  transform: rotateX(90deg) translateZ(25px);
-}
-.btn a:hover{
-  transform: translateZ(-25px) rotateX(-90deg);
-}
+
+
 
 .btn-primary+.btn-primary {
-  margin-left: 10px;
-  /* background-color: white; */
+  margin-left: 30px;
+
   font-weight: bold;
 }
 
@@ -191,7 +166,7 @@ a {
   padding: 1rem 1rem 0 0;
   text-decoration: none;
   margin-right: 1rem;
-  color: var(--neutral);
+  color: var(--secondNeutral);
 }
 
 .nav__btn:hover {
@@ -343,7 +318,8 @@ ul li {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: rgba(35, 117, 53, 46);
+  background-color: rgba(224, 175, 0, 46);
+
   box-shadow: 0 0 15px rgba(148, 115, 0, 0.5),
   0 0 30px rgba(148, 115, 0, 0.5),
   0 0 45px rgba(148, 115, 0, 0.5),
@@ -493,7 +469,7 @@ h3.name b {
 }
 
 #filter-data {
-  width: auto;
+  max-width: 90rem;
   height: auto;
   margin: 0 auto;
   display: flex;
@@ -503,6 +479,7 @@ h3.name b {
   flex-wrap: wrap;
   transition: 0.4s;
   padding: 1rem;
+
 }
 
 #search-item {

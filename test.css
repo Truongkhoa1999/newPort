@@ -27,7 +27,7 @@
 .shootingStar {
   position: absolute;
   height: 1px;
-  background: linear-gradient(-70deg, #4AF76F, #237535);
+  background: linear-gradient(-70deg, #fcf80a, #ffc400);
 }
 .shootingStarContainer:nth-child(1) .shootingStar:nth-child(1) {
   left: calc(46%);
