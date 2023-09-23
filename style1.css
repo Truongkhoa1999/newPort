@@ -757,7 +757,6 @@ article {
   align-items: center;
   justify-content: flex-end;
   grid-area: footer;
-  /* background-color: rgb(2, 2, 31); */
   background-image: url("https://images.unsplash.com/photo-1554468861-c2db6505ab05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2815&q=80");
   background-size: cover;
   background-position: center;
@@ -792,7 +791,6 @@ article {
   font-weight: bold;
   line-height: 2;
   margin-top: 1rem;
-  border: 1px solid red;
 }
 
 .header_title2 {
@@ -862,7 +860,6 @@ article {
   margin: auto;
   height: auto;
   width: 90%;
-  border: 1px solid red;
 }
 #contact__form input {
   width: 100%;
