@@ -351,7 +351,7 @@ ul li {
 
 /* FRAME 2 */
 /* color setting */
-#main,
+
 .frame2__wrapper {
   padding: 0;
   margin: 0;
@@ -492,7 +492,7 @@ h3.name b {
   color: white;
 
 }
-
+/* elements project */
 article {
   margin: 3rem 4rem 3rem 4rem;
 
